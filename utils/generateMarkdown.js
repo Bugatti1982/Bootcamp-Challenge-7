@@ -70,4 +70,3 @@ function generateMarkdown(data) {
 }
 
 export default generateMarkdown;
-
