@@ -50,7 +50,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
-  [Credits](#credits)
+  [Contributions](#contributions)
   ${renderLicenseLink(data.license)}
   [Description](#description)
   ## Installation

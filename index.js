@@ -44,12 +44,12 @@ const questions = [
     {
         type: 'input',
         name: 'user',
-        message: 'Please provide a username'
+        message: 'Please provide a GitHub username'
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Please provide an email'
+        message: 'Please provide an GitHub email'
     },
 ];
 
@@ -57,7 +57,7 @@ const questions = [
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, data, (err) =>
-        err ? console.log(err) : console.log('Successfully created index.md')
+        err ? console.log(err) : console.log('Successfully created README.md')
     );
 }
 
@@ -68,7 +68,7 @@ function init() {
         .prompt(questions)
         .then((response) => {
 
-            writeToFile('index.md', generateMarkdown(response))
+            writeToFile('README.md', generateMarkdown(response))
         })
 }
 
